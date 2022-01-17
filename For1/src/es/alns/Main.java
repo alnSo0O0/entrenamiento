@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int num =0
+        int num =0;
         Scanner entrada = new Scanner (System.in);
         System.out.println("Escribe un número: ");
-        num = entrada.nextLine();
+        num = entrada.nextInt();
 	for  (int i = 0; i < num; i++){
         System.out.println(i + 1);
 
