@@ -1,13 +1,18 @@
 package es.alns;
 
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
         int sum = 0;
-        int n = 1000;
+        int n;
+        Scanner entrada = new Scanner (System.in);
 
-        for (int i = 1; i < n; i++) {
+        System.out.println("Dame un número");
+        n = entrada.nextInt();
+
+        for (int i = 0; i < n; i++) {
             sum += (i + 1);
 
         }
