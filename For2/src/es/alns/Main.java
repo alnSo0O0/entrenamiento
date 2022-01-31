@@ -5,18 +5,26 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        int sum = 0;
-        int n;
-        Scanner entrada = new Scanner (System.in);
 
-        System.out.println("Dame un número");
+        int n;
+        int sum = 0;
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Dame un número: ");
         n = entrada.nextInt();
 
-        for (int i = 0; i < n; i++) {
-            sum += (i + 1);
+        for (int i = 1; i <= n; i++) {
+            if (n % i == 0) {
+                sum++;
+                System.out.println(sum);
+            }
 
         }
+        if (sum <= 2) {
+            System.out.println("El número " + n + " es primo");
+        } else {
+            System.out.println("El número " + n + " no es primo");
 
-        System.out.println("Resultado: " + sum);
+        }
     }
 }
