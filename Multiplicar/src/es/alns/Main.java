@@ -13,7 +13,7 @@ int n;
         i = entrada.nextInt();
 
         while( i < 10 ){
-            System.out.println( + i + " x " +n+  " = " +op+ );
+            System.out.println( + i + " x " +  = );
             n++;
         }
     }
