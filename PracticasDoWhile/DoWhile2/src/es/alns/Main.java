@@ -6,15 +6,16 @@ public class Main {
 
     public static void main(String[] args) {
         int i;
-int n;
         Scanner entrada = new Scanner(System.in);
+for (int n = 0; n < 5; n++) {
 
-        System.out.println("Que tabla de multiplicar quieres saber?");
+    do {
+        System.out.print("Dame un numero: ");
         i = entrada.nextInt();
-
-        while( i < 10 ){
-            System.out.println( + i + " x " +  = );
-            n++;
-        }
-    }
+        System.out.println("Numero " +n+ " : " + i);
+    } while (i < 0);
+    System.out.println("El numero que me has dado es " + i);
 }
+        }
+
+    }
